@@ -20,6 +20,7 @@ __Assignments__ <br />
 [lab3:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab3(%20Neural%20Dependency%20Parsing))    Neural Dependency Parsing ✅ <br />
 [lab4:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab4(Seq2Seq%20Model%20with%20Attention%20))    Neural Machine Translation with RNNs and Analyzing NMT Systems ✅ <br />
 [lab5:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab5(Pretraining%20and%20Fine_tuning%20Transformer%20Model))   Self-Attention, Transformers, and Pretraining ✅ <br />
+[Click here to get Model Params for lab5!]()
 <br />
 
 Usage:
