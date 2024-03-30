@@ -167,35 +167,34 @@ class CharCorruptionDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx):
-      def __getitem__(self, idx):
         # TODO [part e]: see spec above
 
-        # Usage of idx fopr data element retrieval.
         document = self.data[idx]
-        # Truncation of the document to be a random length between 4 and 7/8th of the block size.
         document = document[:random.randint(4, int(self.block_size*7/8))]
-        # Length of the mask, which has to be approx a quarter of the document's length.
-        average_len = round(len(document) / 4)
-        mask_len = average_len + random.randint(-average_len, average_len)
-        # Choosing of the starting index randomly, based on the length of the mask.
-        cutting_idx = random.randint(0, mask_len)
-        # Creation of the prefix, suffix, and masked content.
-        prefix = document[:cutting_idx]
-        suffix = document[cutting_idx+mask_len:]
-        masked_content = document[cutting_idx:cutting_idx+mask_len]
-        # Generation of the masked string by taking out the masked content.
+
+        # Prepare mask length and cut index
+        mean_len = round(len(document) / 4)
+        mask_len = mean_len + random.randint(-mean_len, mean_len)
+        clip_idx = random.randint(0, mask_len)
+
+        # Step 2: prefix, suffix, mc
+        prefix = document[:clip_idx]
+        suffix = document[clip_idx+mask_len:]
+        masked_content = document[clip_idx:clip_idx+mask_len]
+
+        # Step 3: generate the masked string by taking out masked content
         masked_string = prefix + self.MASK_CHAR + suffix + self.MASK_CHAR + masked_content
         masked_string += self.PAD_CHAR * (self.block_size - len(masked_string))
-        # Construction of the input, output.
+
+        # Step 4: construct in/out
         input = masked_string[:-1]
         output = masked_string[1:]
-        # Encoding of the input-output pair into a tensor of type long.
+
+        # Step 5: encode the input-output pair to a tensor of type long
         x = torch.tensor([*map(self.stoi.get, input)], dtype=torch.long)
         y = torch.tensor([*map(self.stoi.get, output)], dtype=torch.long)
-        return x, y
-        # TODO [part e]: see spec above
-        raise NotImplementedError
 
+        return x, y
 """
 Code under here is strictly for your debugging purposes; feel free to modify
 as desired.
