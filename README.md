@@ -6,26 +6,29 @@ All the rights of the relevant materials belong to Standfor University.
 课程所有资料所有权属于斯坦福大学。
 
 __课程主页__：[Stanford / Winter 2021](http://web.stanford.edu/class/cs224n/)
+<br />
 
 __课程视频__:[YouTube](https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ&index=1)
+<br />
 
 __国内视频资源__：[【斯坦福CS224N】(2021|中英) 深度自然语言处理Natural Language Processing with Deep Learning](https://www.bilibili.com/video/BV18Y411p79k/?spm_id_from=333.337.search-card.all.click&vd_source=383492af990fc99e468d8084dc0e2e30)
-
+<br />
 
 __Assignments__ <br />
 [lab1:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab1)   Exploring Word Vectors ✅<br />
 [lab2:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab2)   word2vec ✅<br />
 [lab3:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab3(%20Neural%20Dependency%20Parsing))    Neural Dependency Parsing ✅ <br />
 [lab4:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab4(Seq2Seq%20Model%20with%20Attention%20))    Neural Machine Translation with RNNs and Analyzing NMT Systems ✅ <br />
-[lab5:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab5(Pretraining and Fine_tuning Transformer Model))Self-Attention, Transformers, and Pretraining ✅ <br />
-
+[lab5:](https://github.com/eeeedy/NLP-cs224n_lab1-5/tree/main/lab5(Pretraining%20and%20Fine_tuning%20Transformer%20Model))   Self-Attention, Transformers, and Pretraining ✅ <br />
+<br />
+<br />
 
 Usage:
 In the environment of git installed, use the command as follows:
 __$git clone https://github.com/eeeedy/NLP-cs224n_lab1-5__
 And you will get all the materials of this excellent course.
 Or, just click the green button "Clone or download" of this repo, then choose the "Download Zip", and you will get them.
-
+<br />
 使用方法：
 在git已安装的环境中，使用以下命令：
 __$git clone https://github.com/eeeedy/NLP-cs224n_lab1-5__
